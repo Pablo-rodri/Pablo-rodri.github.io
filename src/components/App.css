@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  background: #52a3f5;
+ 
 }
 /* PAGINA PRINCIPAL*/
 .h2Principal {
@@ -8,12 +8,20 @@ body {
   font-family: "Courier New", Courier, monospace;
   font-size: 35px;
   text-transform: uppercase;
+  transition: all;
+  transition-duration: 2s;
+}
+.h2Principal:hover{
+
+  text-shadow: 2px 2px 2px rgb(56, 56, 63);
+
 }
 #container {
   display: flex;
   flex-direction: row;
   justify-content: space-evenly;
-  margin-top: 80px;
+  margin-top: 40px;
+  margin-bottom: 55px;
 }
 
 .div1Principal {
@@ -28,12 +36,13 @@ body {
   width: 200px;
   border-radius: 40%;
   margin: auto;
-  padding-top: 30px;
   margin-bottom: 30px;
+  transition: all;
+  transition-duration: 2s;
 }
 .img1Principal:hover {
-  transform: scale(1.5);
-  transition: 1s;
+  transform: scale(1.2);
+ 
 }
 .UlPrincipal {
   background: #52a3f5;
@@ -74,7 +83,7 @@ p {
 ul {
   list-style-type: none;
   margin: 0;
-  background-color: #8687f3;
+
   justify-content: space-around;
   height: 40px;
 }
@@ -88,13 +97,14 @@ li a {
 }
 
 li a:hover {
-  -webkit-transform: scale(1.3);
+
   transform: scale(1.2);
-  border-radius: 25px;
-  background-color: #555;
-  color: white;
+  border-radius: 15px;
+  text-decoration-line: underline;
+  color: rgb(130, 135, 231);
   transition: 1s;
-  filter: opacity(0.6);
+
+  
 }
 .ulNav {
   display: flex;
@@ -108,6 +118,42 @@ li a:hover {
 button {
   border: none;
   display: none;
+}
+
+
+/*IFRAME*/
+iframe{
+  width: 90%;
+  height: 700px;
+  margin-top: 30px;
+
+}
+.curriculum{
+  margin-left: auto;
+  margin-right: auto;
+ 
+ 
+}
+
+
+/* REDES SOCIALES*/
+.redesSociales{
+  background-color: #4e54c8;
+  display: flex;
+  width: 40%;
+ margin-left: auto;
+ margin-right: auto;
+ background: white;
+margin-top: 25px;
+}
+.aRedes{
+  margin-left: auto;
+  margin-right: auto;
+}
+.imgRedes{
+  height: 50px;
+  width: 50px;
+
 }
 
 /* MEDIA*/
@@ -146,7 +192,7 @@ button {
 .circle {
   position: absolute;
   border-radius: 50%;
-  background: white;
+  background: rgb(117, 162, 244);
   animation: ripple 15s infinite;
   box-shadow: 0px 0px 1px 0px #508fb9;
 }
@@ -346,7 +392,94 @@ button {
     border-radius: 50%;
   }
 }
-/*sobreMi*/
+/*BARRA DE NAVEGACION 2*/
+
+/* Estilos comunes */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #2aacb8;
+  padding: 1rem;
+}
+
+/* Estilos móvil/celular */
+@media all and (max-width: 700px) {
+
+  /* Oculta el nav en la parte izquiera */
+  .nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: red;
+    transform: translateX(-100vw);
+    transition: 0.5s;
+  }
+
+  /* Muestra el nav */
+  .nav--show {
+    transform: translateX(0);
+  }
+
+  .nav__button {
+    text-align: right;
+    margin: 1rem;
+  }
+
+  .nav__ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .nav__link {
+    display: block;
+    padding: 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+    text-decoration: none;
+    color: black;
+  }
+}
+
+/* Estilos Escritorio */
+@media all and (min-width: 701px) {
+
+  /* Oculta botón de abrir o cerrar */
+  .nav__button,
+  .header__button-nav--open {
+    display: none;
+  }
+
+  /* Adapta el nav en horizontal */
+  .nav__ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+  }
+
+  .nav__link {
+    display: block;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+  }
+
+  .nav__link:hover {
+    opacity: 0.5;
+  }
+}
+
+
+
+/*SBREMI*/
 .sobreMih2 {
   text-transform: uppercase;
   font-size: 60px;
@@ -355,7 +488,7 @@ button {
   position: absolute;
   writing-mode: vertical-lr;
   top: 80%;
-  bottom: 10;
+ 
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
   word-wrap: break-word;
   line-height: 20px;

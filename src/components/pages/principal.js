@@ -1,9 +1,8 @@
-import logo from "../img/img1.jpg"
-import logo2 from "../img/css.png"
-import logo3 from "../img/bootstrap.png"
-import logo4 from "../img/html-5.png"
-import logo5 from "../img/js.png"
-import logo6 from "../img/pripia2.jpg"
+
+import logo6 from "../img/foto.jpg"
+import logo1 from "../img/github.png"
+import logo2 from "../img/linkedin.png"
+import logo3 from "../img/gorjeo.png"
 
 const Principal = () => {
     
@@ -32,19 +31,14 @@ const Principal = () => {
 
   </div>
 </div>
-<div className="div2Principal">
-
-    <p className="columnaDerecha moveme"><b>TECNOLOGIAS CONOCIDAS</b> .</p>
-    <div className="div3Principal">
-    <ul className= "UlPrincipal"l>
-      <li ><img className="imgPrincipal1" src={logo4} ></img></li>
-      <li ><img className="imgPrincipal" src={logo2} ></img></li>
-      <li ><img className="imgPrincipal" src={logo5} ></img></li>
-      <li  ><img className="imgPrincipal" src={logo3} ></img></li>    
-    </ul>  
-    </div>
-  </div>
 </div>
+<section className="redesSociales">
+    <a className="aRedes" href="https://github.com/Pablo-rodri?tab=repositories"><img className="imgRedes" src={logo1}/></a>
+    <a className="aRedes"  href="https://www.linkedin.com/in/pablo-rodr%C3%ADguez-ram%C3%ADrez/"><img className="imgRedes" src={logo2}/></a>
+    <a className="aRedes"  href="https://github.com/Pablo-rodri?tab=repositories"><img className="imgRedes" src={logo3}/></a>
+
+
+  </section>
 </>
     )
 }
